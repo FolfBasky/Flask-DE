@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='css/style.css')}}">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{title}}</title>
+</head>
+<body>
+    
+    {% block mainmenu %}
+    <ul class="mainmenu">
+        {% for m in menu %}
+        <li><a href={{m.link}}>{{m.title}} </a></li>
+        {% endfor %}
+    </ul>
+    {% endblock mainmenu %}
+    {% if title == 'Startseite' %}
+    <div class="mainpage-text">
+        <h1>Stadt der Zukunft</h1>
+        <p>Unsere Vision einer Stadt der Zukunft basiert auf moderner Technologie, sozialer Gerechtigkeit und Umweltfreundlichkeit. Diese Zukunftsstadt ermöglicht ihren Bewohnern ein gesundes und glückliches Leben, ohne die Umwelt zu belasten.</p>
+        <ul>
+            <li>Intelligente Verkehrssysteme</li>
+            <li>Innovative Medizinindustrie</li>
+            <li>Breites Spektrum an Bildungseinrichtungen für alle Bewohner</li>
+        </ul>
+        <p>Wir wollen sicherstellen, dass unsere Zukunftsstadt eine inspirierende Vorlage für andere Städte auf der ganzen Welt darstellt.</p>
+        <h2>Ethische und moralische Standards</h2>
+        <p>Es ist auch wichtig, ethische und moralische Standards bei der Integration von unabhängigen KI-Systemen zu wahren. Wir müssen sicherstellen, dass diese Systeme unseren Werten entsprechen und das Wohl der Gemeinschaft über allem steht.</p>
+    </div>
+    {% endif %}
+    {% block content %}
+    
+    {% endblock content %}
+</body>
+</html>

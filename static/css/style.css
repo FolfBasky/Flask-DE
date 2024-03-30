@@ -1,0 +1,92 @@
+body {
+    background-color: rgb(142, 141, 141);
+}
+
+.mainpage-text {
+    font-size: x-large;
+    margin: 15px;
+    padding: auto;
+
+}
+
+ul.mainmenu {
+    list-style: none;
+    overflow: hidden;
+    padding: 5px;
+    margin: 0;
+    height: 60px;
+    font-size: 22px;
+    color: chocolate;
+    background-color: rgb(42, 41, 41);
+    border: 3px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ul.mainmenu li {
+    float: left;
+    margin: auto;
+}
+
+ul.mainmenu li.last {float: right;}
+
+a {
+    text-decoration: none;
+    font-style: initial;
+    color: red;
+}
+
+h1.stadt {
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+}
+
+.buttons {
+    padding: 20px;
+    border-radius: 10px;
+    border-width: 1px;
+    background-color: rgb(42, 41, 41);
+    color: red;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+#textContainer {
+    opacity: 0;
+    font-size: 30px;
+    margin-left: 2%;
+    margin-top: 4%;
+    transition: opacity 1s ease-in-out;
+    font-style: italic;
+    word-break:normal;
+    border: 1px solid black;
+    background-color: gray;
+    padding: 15px;
+}
+  
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  
+button {
+    margin: 0 200px;
+}
+
+.creater-info { 
+    margin: 15px;
+    padding: auto;
+    font-size: x-large;
+}
+
+.who {
+    right: 30px;
+    font-size: 20px;
+    position: absolute;
+    bottom: 0; 
+}

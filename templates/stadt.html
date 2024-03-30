@@ -1,0 +1,15 @@
+{% extends 'index.html' %}
+
+{% block content %}
+{{ super() }}
+
+<p class="clear"></p>
+<div class="stadt-content">
+    <div class="container">
+        <button id="animateButtonVorteile" class="buttons">Positive Seite</button>
+        <button id="animateButtonNachteile" class="buttons">Negative Seite</button>
+    </div>
+    <div id="textContainer"></div>
+</div>
+<script src="{{url_for('static',filename='js/logic.js')}}"></script>
+{% endblock content %}
